@@ -1,32 +1,35 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap'); */
-
-/* font-family: 'Ibarra Real Nova', serif; */
-
-.bannerTitle{
-    background-color: black;
-    border-radius: 20px;
-    display: flex;
-    margin: 40px 5%;
-    padding: 30px;
-    
+body{
+    margin: 0%;
 }
 
-.banner{
-    width: 90%;
+/* Banner section
+------------------- */
+.bannerTitle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    justify-content: center;
+    justify-items: center;
+    margin: 40px 5%;
+    border-radius: 20px;
+    height: 600px;
 }
 
 h1{ 
     font-size: 4em;
     color: white;
+    padding: 0 40px;
 }
 
-p{
-    /* font-family: 'Ibarra Real Nova', serif; */
+h1,  p{
+    padding: 0 40px;
     font-family: 'Poppins', sans-serif;
     color: white;
+    margin-bottom: 50px;
 }
 
 .watchButton{
+    margin-left: 40px;
     background-color: orangered;
     font-size: 2em;
     color: white;
@@ -35,7 +38,7 @@ p{
     text-decoration: none;
 }
 
-span{
+.banner > span{
     background-color: orangered;
     font-size: 2em;
     color: white;
@@ -44,15 +47,127 @@ span{
 }
 
 .imageSection{
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    display: grid;
+    align-items: flex-end;
+    
 }
 
-.imageSection img{
-    display: inline-block;
-    /* justify-content: center;
-    align-items: center; */
-    position: relative;
-    left: 25%;
+/* Aside section
+---------------- */
+
+.navArticle{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) 4fr;
+    border: pink;
+    margin: 40px 5%;
+    border-radius: 20px;
+    gap: 30px;
 }
+
+.navigation{
+    height: 460px;
+    background-color: black;
+    border-radius: 10px;
+
+
+}
+
+.sideMenu{
+    gap: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    background-color: white;
+
+}
+
+.sideMenu:hover{
+    background-color: red;
+}
+
+ul, li{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+#singleMenuColor{
+    background-color: orangered;
+}
+
+#singleMenuColor:hover{
+    background-color: white;
+}
+
+/* Card Section----
+----------------- */
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.articleCategory{
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 10px;
+    
+}
+
+.cardButton{
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;         
+}
+
+p{
+    color: black;
+}
+
+.cardIcon{
+    display: flex;
+   justify-content: start;
+   /* align-items: center; */
+}
+
+
+/* footer section
+------------------ */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 500px;
+}
+
+.footerText{
+    color: white;
+}
+
+.footerMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
+
+
+
